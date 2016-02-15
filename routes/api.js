@@ -6,7 +6,7 @@ var router=express.Router();
 var product=require('../models/product');
 
 //routes
-product.methods(['get','put','patch','post','delete']);
+product.methods(['get','put','post','delete']);
 product.register(router,'/products');
 
 //Return router
